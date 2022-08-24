@@ -17,6 +17,8 @@ import{MatInputModule} from '@angular/material/input';
 import{MatCardModule} from '@angular/material/card';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { UserloginComponent } from './userlogin/userlogin.component';
+import { AdminnavComponent } from './adminnav/adminnav.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +28,8 @@ import { UserloginComponent } from './userlogin/userlogin.component';
     EditbusComponent,
     RemovebusComponent,
     AdminloginComponent,
-    UserloginComponent
+    UserloginComponent,
+    AdminnavComponent
   ],
   imports: [
     BrowserModule,
