@@ -1,1 +1,42 @@
-<p>listbus works!</p>
+<div class="container">
+    <h4 class="text-success">Bus List</h4>
+    <div  class="jumbotron">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>BusNo</th>
+                    <th>Bus type</th>
+                    <th>Driver Name</th>
+                    <th>Driver Contact</th>
+                    <th>Rows</th>
+                    <th>Cols</th>
+                    <th>Departure Time</th>
+                    <th>Arrival time</th>
+                    <th>Pick up</th>
+                    <th>Seat Cost</th>
+                    </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let bus of Buslist">
+                    <td>{{bus.BusNo}}</td>
+                    <td>{{bus.TypeOfBus}}</td>
+                    <td>{{bus.DriverName}}</td>
+                    <td>{{bus.DriverContact}}</td>
+                    <td>{{bus.Rows}}</td>
+                    <td>{{bus.Cols}}</td>
+                    <td>{{bus.DTime}}</td>
+                    <td>{{bus.ATime}}</td>
+                    <td>{{bus.Pickup}}</td>
+                    <td>{{bus.SeatCost}}</td>
+                    <td></td>
+                    <td>
+                        <a [routerLink]="['/find/',bus.BusNo]">Details</a>
+                        <a [routerLink]="['/edit/',bus.BusNo]">Edit</a>
+                        <a [routerLink]="['/remove/',bus.No]">Remove</a>
+                    </td>
+                </tr> 
+            </tbody>
+        </table>
+    </div>
+</div>
+

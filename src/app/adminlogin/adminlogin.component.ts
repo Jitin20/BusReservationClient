@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-adminlogin',
   templateUrl: './adminlogin.component.html',
@@ -9,11 +9,13 @@ export class AdminloginComponent implements OnInit {
   public loginValid = true;
   public username = '';
   public password = '';
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
+  
   }
   public onSubmit(): void {
     this.loginValid = true;
+    this.router.navigate(['/AdminNav']);
   }
 }

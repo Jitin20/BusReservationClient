@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
+import { AdminnavComponent } from './adminnav/adminnav.component';
 import { ListbusComponent } from './listbus/listbus.component';
 import { FindbusComponent } from './findbus/findbus.component';
 import { EditbusComponent } from './editbus/editbus.component';
@@ -11,6 +12,9 @@ import { UserloginComponent } from './userlogin/userlogin.component';
 const routes: Routes = [
   {
     path:'Adminlogin',component:AdminloginComponent
+  },
+  {
+    path:'AdminNav',component:AdminnavComponent
   },
   {
     path:'add', component:AddbusComponent
