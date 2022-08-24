@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 })
 export class AdminloginComponent implements OnInit {
   public loginValid = true;
-  public username = '';
+  public email = '';
   public password = '';
   constructor(private router:Router) { }
 

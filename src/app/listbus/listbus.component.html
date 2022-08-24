@@ -4,6 +4,7 @@
         <table class="table">
             <thead>
                 <tr>
+                    <th>BusId</th>
                     <th>BusNo</th>
                     <th>Bus type</th>
                     <th>Driver Name</th>
@@ -18,6 +19,7 @@
             </thead>
             <tbody>
                 <tr *ngFor="let bus of Buslist">
+                    <td>{{bus.BusId}}</td>
                     <td>{{bus.BusNo}}</td>
                     <td>{{bus.TypeOfBus}}</td>
                     <td>{{bus.DriverName}}</td>

@@ -1,26 +1,22 @@
-<br/><br/><br/><br/><br/>
-
-<mat-card>
-    <mat-card-content>
+<br/><br/><br/><br/>
+      
       <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
-        <h2>Admin Log In</h2>
-        <mat-error *ngIf="!loginValid">
-          The username and password were not recognized
-        </mat-error>
-        <mat-form-field>
-          <input type="email" matInput placeholder="Email" [(ngModel)]="username" name="username" required>
-          
-          <mat-error>
-            Please provide a valid email address
-          </mat-error>
-        </mat-form-field>
-        <mat-form-field>
-          <input matInput type="password" placeholder="Password" [(ngModel)]="password" name="password" required>
-          <mat-error>
-            Please provide a valid password
-          </mat-error>
-        </mat-form-field>
-        <button mat-raised-button color="primary" [disabled]="!loginForm.form.valid">Login</button>
+
+        <div style="margin-left:500px;margin-top: 5px;margin-right: 500px;border-style:initial;">
+        <h3 style="text-align: center;">Admin Login</h3>
+          <div class="form-group"><br/>
+          <label for="exampleInputEmail1"><b>Email address</b></label>
+          <input type="email" class="form-control" id="exampleInputEmail1"  placeholder="Enter email"  >
+          <small id="emailHelp" class="form-text text-muted"> never share your email with anyone else.</small>
+        </div><br/>
+        <div class="form-group">
+          <label for="exampleInputPassword1"><b>Password</b></label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" >
+        </div>
+      <br/><br/>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
       </form>
-    </mat-card-content>
-  </mat-card>
+
+
+      
