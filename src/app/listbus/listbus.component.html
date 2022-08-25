@@ -1,6 +1,14 @@
+<br/>
+<button type="button" class="btn btn-info" routerLink="/add" style="margin-left:600px">
+    Add Bus
+ </button>
+ <button type="button" class="btn btn-info" routerLink="/AdminNav" style="margin-left:450px">
+    Back
+ </button>
+ <br/>
 <div class="container">
-    <h4 class="text-success">Bus List</h4>
-    <div  class="jumbotron">
+    <h4 style="color:blueviolet" >Bus List</h4>
+    <div  class="jumbotron"><hr/>
         <table class="table">
             <thead>
                 <tr>
@@ -19,22 +27,22 @@
             </thead>
             <tbody>
                 <tr *ngFor="let bus of Buslist">
-                    <td>{{bus.BusId}}</td>
-                    <td>{{bus.BusNo}}</td>
-                    <td>{{bus.TypeOfBus}}</td>
-                    <td>{{bus.DriverName}}</td>
-                    <td>{{bus.DriverContact}}</td>
-                    <td>{{bus.Rows}}</td>
-                    <td>{{bus.Cols}}</td>
-                    <td>{{bus.DTime}}</td>
-                    <td>{{bus.ATime}}</td>
-                    <td>{{bus.Pickup}}</td>
-                    <td>{{bus.SeatCost}}</td>
+                    <td>{{bus.busId}}</td>
+                    <td>{{bus.busNo}}</td>
+                    <td>{{bus.typeOfBus}}</td>
+                    <td>{{bus.driverName}}</td>
+                    <td>{{bus.driverContact}}</td>
+                    <td>{{bus.rows}}</td>
+                    <td>{{bus.cols}}</td>
+                    <td>{{bus.dtime}}</td>
+                    <td>{{bus.atime}}</td>
+                    <td>{{bus.pickup}}</td>
+                    <td>{{bus.seatCost}}</td>
                     <td></td>
                     <td>
-                        <a [routerLink]="['/find/',bus.BusNo]">Details</a>
-                        <a [routerLink]="['/edit/',bus.BusNo]">Edit</a>
-                        <a [routerLink]="['/remove/',bus.No]">Remove</a>
+                        <a [routerLink]="['/find/',bus.BusNo]">Details</a>&nbsp;&nbsp;
+                        <a [routerLink]="['/edit/',bus.BusNo]">Edit</a>&nbsp;&nbsp;
+                        <a [routerLink]="['/remove/',bus.No]">Remove</a>&nbsp;&nbsp;s
                     </td>
                 </tr> 
             </tbody>

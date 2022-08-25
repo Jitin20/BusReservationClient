@@ -1,21 +1,15 @@
 
 <br/>
 <nav  style="background-color: #e3f2fd;text-align: center;height: 50px;">
-    <a routerLink="/list" style="color:blueviolet;">
-        <button mat-button routerLink="/" ><b>BusList</b></button>
-    </a>
-    <a routerLink="/add" style="color:blueviolet">
-        <button mat-button routerLink="/"><b>RouteList</b></button>
-    </a>
-    <!-- <a routerLink="/edit/:BusNo" style="color:blueviolet">
-        <button mat-button routerLink="/">BusEdit</button>
-    </a>
     
-    <a routerLink="remove/:BusNo" style="color:blueviolet">
-        <button mat-button routerLink="/">Remove</button>
+      
+    <a routerLink="/list" style="color:blueviolet;text-decoration: none;margin-top:20px;font-size: larger;">
+    <b>BusList</b>
     </a>
-    <a routerLink="find/:id" style="color:blueviolet">
-        <button mat-button routerLink="/">BusEdit</button>
-    </a> -->
+   
+    <a routerLink="/add" style="color:blueviolet;text-decoration: none;margin-left: 25px;font-size: larger;">
+    <b>RouteList</b>
+    </a>
+
   </nav>
- 
+ <router-outlet></router-outlet>
